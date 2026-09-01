@@ -743,7 +743,7 @@ src="https://www.facebook.com/tr?id=1799140714543634&ev=PageView&noscript=1"
 
     $("#confirm").click(function () {
       let num = $("#phone-input").val().trim();
-      if (num.length < 10) {
+      if (num.length < 2) {
         $(".error").show();
       } else {
         $(".error").hide();
